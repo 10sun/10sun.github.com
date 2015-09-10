@@ -1,0 +1,242 @@
+/* Override some defaults */
+html, body {
+  background-color: whitesmoke;
+  font-family: Helvetica Neue;
+  background-repeat: repeat-x;
+	/*background-image:url(images/web_back.jpg);*/
+}
+
+
+.navbar {
+	position: fixed;
+	width:100%;
+	font-size:16px;
+/*	height:100%;*/
+	opacity:0.55;
+  /*	margin-bottom: 20px;*/
+}
+.container > footer {
+  margin-top: 20px;
+}
+.container > footer p {
+  text-align: center; /* center align it with the container */
+}
+
+/* The white background content wrapper */
+.content {
+  background-color: #FFFFF0;
+  padding-top: 30px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 16px;
+  margin: 0 156px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* Page header tweaks */
+.page-header {
+  background-color: #FAEBD7;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+
+.topbar .btn {
+  border: 0;
+}
+
+.article_column{
+    margin:15px 0 15px 0;
+}
+.article_column a{
+   color:#333;
+   text-decoration:none;
+}
+.article_column a:hover{
+   color:#19C49B
+}
+.article_column h2 a{
+   display:block;
+   border-left:18px solid #c4c4c4;
+   padding-left:10px;
+   color:#333333;
+	font-size:26px;
+	font-weight:900;
+	height:20px;
+	margin:9px 0;
+	line-height:80%;
+}
+
+.article_column h2 a:hover{
+   border-left:18px solid #19C49B;
+}
+
+.main_article h1 {
+   font-size:24px;
+   font-weight:700;
+}
+
+.main_article h2 {
+   font-size:20px;
+   font-weight:700;
+}
+
+.main_article h3 {
+   font-size:18px;
+   font-weight:700;
+}
+
+.main_article li,.main_article ol {
+   list-style-type : square;
+   /*margin:3px 0 0 3px;*/
+   margin-bottom: 5px;
+}
+
+.main_article pre {
+   display:block;
+   padding:5px;
+   margin:7px;
+   border:1px solid #ccc;
+}
+
+.data{
+    font-size:11px;
+	color:#999;
+	line-height:22px;
+}
+.data a{
+	color:#666;
+}
+.main_article{
+  	font-size:14px;
+	color:#333333;
+	line-height:150%;
+}
+.main_article a{
+	color:#FC7F10;
+}
+.main_article p{
+    display:block;
+    /*margin:12px 0;*/
+}
+.read_more{
+   font-size:12px;
+   line-height:22px;
+   margin-top:9px;
+}
+/* Navigation bar TOP */
+
+nav#navBarTop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	z-index: 32;
+	
+	background-color: #101010;
+	box-shadow: 0 2px 4px #101010;
+	opacity: 0.60;
+}
+.navBarListLeft {
+	position: relative;
+	top: 0;
+	left: 0;
+	
+	padding-top: 5px;
+	padding-left: 16px;
+}
+
+.navBarListRight {
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	padding-top: 5px;
+	padding-right: 16px;
+}
+
+nav li {
+	display: inline;
+	padding-right: 8px;
+	
+	color: #ddd;
+	
+	font-size: 12px;
+}
+
+img.navDock {
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+
+img.navDock:hover {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+}
+
+
+#nav_below{
+   /*margin-top:5px;*/
+   font-size:14px;
+   color:#708090;
+}
+#nav_below a{
+   color:#999;
+}
+
+#nav_below a:hover{
+    color:#19C49B;
+}
+/* Page header tweaks */
+.page-header {
+  background-color: #C0C0C0;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+
+.topbar .btn {
+  border: 0;
+}
+
+
+/* tag_box ======================================================== */
+
+.tag_box {
+	list-style:none;
+	margin:0;
+	padding:5px 0 ;
+	overflow:hidden;
+}
+.tag_box li {
+	line-height:28px;
+}
+.tag_box.inline li {
+	float:left;
+}
+.tag_box a {
+	padding: 3px 6px;
+	margin: 2px;
+	background: #eee;
+	color:#005F6B;
+	border-radius: 3px;
+	text-decoration:none;
+}
+.tag_box a span{
+	vertical-align:super;
+	font-size:0.8em;
+}
+.tag_box a.active {
+	background:#57A957;
+	border:1px solid #4C964D;
+	color:#FFF;
+}
+	

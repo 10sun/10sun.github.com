@@ -1,0 +1,36 @@
+<div class="article_column">
+<h2><a href="{{page.url}}">{{ page.title }}</a></h2>
+</div>
+<div class="row">
+  <div class="span7">  
+  	<p class="data">{{ page.date | date_to_string }}|
+  		Category:
+{% for category in page.categories %}
+<a href="/categories">{{ category }}</a>{% unless forloop.last %},{% endunless %}
+{% endfor %}| Tags: {% for tag in page.tags %}<a href="/tags">{{tag}}</a>{% unless forloop.last %}, {% endunless%} 
+{% endfor %}  		</p><!-- | {% unless page.tags == empty %}
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+  {% endunless %}</p>--><hr>
+    {{ content }}<hr>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+      {% endif %}
+      </ul>
+    </div>
+    <hr>
+    {% include JB/comments %}
+  </div>
+  
+
+</div>
