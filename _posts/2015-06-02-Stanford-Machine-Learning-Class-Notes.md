@@ -36,11 +36,11 @@ tags : [MachineLearning, Basis]
         $\theta_j := \theta_j - \alpha$ [Slope of tangent, aka derivative]
     + Gradient Descent for Linear Regression: Replacing the $J(\theta_0, \theta_1)$ with the actual cost function, we could get the gradient descent rule for linear regression:</br>
         **repeat until convergence:**
-        {</br>
-           $$ \theta_0 := \theta_0 - \alpha \frac{1}{m}\sum_{i=1}^m(h_{\theta}(x^{(i)}) - y^{(i)})$$
-        </br>
-           $$ \theta_1 := \theta_1 - \alpha \frac{1}{m}\sum_{i=1}^m((h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)})$$
-        } </br>
+        > $$ \theta_0 := \theta_0 - \alpha \frac{1}{m}\sum_{i=1}^m(h_{\theta}(x^{(i)}) - y^{(i)})\\\\
+        \theta_1 := \theta_1 - \alpha \frac{1}{m}\sum_{i=1}^m((h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)})$$
+        
+        <!-- -->
+        
         where m is the size of the training set, $\theta_0$ as a constant that will be changing simultaneously with $\theta_1$ and 
         x^{(i)}$, $y^{(i)}$ are values of the given training set (data).
 
