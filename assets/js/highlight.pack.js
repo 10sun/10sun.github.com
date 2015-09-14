@@ -24,7 +24,7 @@
       <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
     <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
     <link rel="assets" href="https://assets-cdn.github.com/">
-    <link rel="web-socket" href="wss://live.github.com/_sockets/MTI2MzA5NDpiOTE4ZjQ2NmY4MzQyOGFlZmFhYWIyM2NhNWJiYjA4YToyYzAxODUyNTUwMGQxM2M1OWQ0YmIwOTdkM2MwZjY5ZTMzNTcwZTc3NWY4NjI4ZDVmYmEzYTNjOWIyZmVjY2Rh--05259285fb7c0cb9aa848e54c32f893fdc54aa3a">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/MTI2MzA5NDpiOTE4ZjQ2NmY4MzQyOGFlZmFhYWIyM2NhNWJiYjA4YTozOGJkNDM2ZWRmY2JjMzliZTk2NjYxZjIwMzI3ZDNlOGFjZDM5NTEzMDU5YWU3ZjRkYjRjNjk1ZjhhYjQ0MWUz--2e1fe069e610970a025eadc6f6b38628ca84f941">
     <meta name="pjax-timeout" content="1000">
     <link rel="sudo-modal" href="/sessions/sudo_modal">
 
@@ -35,7 +35,7 @@
     <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
         <meta name="google-analytics" content="UA-3769691-2">
 
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="8A83D958:3CF3:1B74B5C:55F6BB06" name="octolytics-dimension-request_id" /><meta content="1263094" name="octolytics-actor-id" /><meta content="10sun" name="octolytics-actor-login" /><meta content="8ce2dfc7f4bd1110c26be30d5cc420dd5c53a8a75f863357b46815119a44fed9" name="octolytics-actor-hash" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="8A83D958:3CF7:5A045E1:55F6BBE3" name="octolytics-dimension-request_id" /><meta content="1263094" name="octolytics-actor-id" /><meta content="10sun" name="octolytics-actor-login" /><meta content="8ce2dfc7f4bd1110c26be30d5cc420dd5c53a8a75f863357b46815119a44fed9" name="octolytics-actor-hash" />
     
     <meta content="Rails, view, blob#show" data-pjax-transient="true" name="analytics-event" />
     <meta class="js-ga-set" name="dimension1" content="Logged In">
@@ -48,7 +48,7 @@
       <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
 
     <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
-<meta content="KocLliYNLHSHhd1p1scb30zp1SseERM1pvy20Pmqx9DDbgNrMfrwoHRq21avfQAoYT8XjxQ74s+tHDYtU1N2+w==" name="csrf-token" />
+<meta content="nfMGRSP6VCUspf7gruqj+O6EwXed47IfuT9NIaRzZf1Jd8u+Ih3rI6VVbe4QCROd7lXIM8m9AMK/EOmJjVHEWg==" name="csrf-token" />
     <meta content="8b626ea5909742962f2facef504e3d7e08d969bf" name="form-nonce" />
 
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-a14e3d6410d6fd1b2fa98e4e859a3bd1fb7c3b71f16c511481f068705c04d6a5.css" media="all" rel="stylesheet" />
@@ -198,7 +198,7 @@
           Settings
         </a>
 
-        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="J3tpM0YgZcBunflPTr0GfPgXcFgyerxvLaC76hSTqv+OLVztYT1ExcOMEENHnfSUmM7IFE+wjfQAUp8nS1+ywA==" /></div>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="M7HWFdQyBoOsVee7BGizMp0xdBhupsyKQfre6Vi+wqExIFQ3HJLdSwXtJncHT4cEg/VPCDyS0UwTCw7rs+SQTQ==" /></div>
           <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -233,7 +233,7 @@
 <ul class="pagehead-actions">
 
   <li>
-      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DPV2w1+grt5Z5v+KbWEO+R+as8Mrb2Ljt4VccQAiFwTDBBY/eQEinYJWCy+QS33XpmHLuR8/GSvyhPaVdfoMnw==" /></div>    <input id="repository_id" name="repository_id" type="hidden" value="10218028" />
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="mDapljwM8MIStm9MXaQsr3iYTQoEcMUjVtR9UjbgXQm2PBVnsUjcYAovIQkq7g/BpjYqutnlZE8d19jhs04DVg==" /></div>    <input id="repository_id" name="repository_id" type="hidden" value="10218028" />
 
       <div class="select-menu js-menu-container js-select-menu">
         <a href="/noyobo/noyobo.github.com/subscription"
@@ -308,7 +308,7 @@
     
   <div class="js-toggler-container js-social-container starring-container ">
 
-    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="d5JoK9vVemiIPyMAv7HIeIHCPVD3Ft5h5NyKyGHETeO57AXgjZTOJ3qtXCa/thj9mfzNwApY8BnTYVu6wKljqA==" /></div>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="x+pnmM/qEhDFDet9uMohG+g4lE2C7WfnZThWi5plDWk4l4gKqmT2JpMqJ045pKohG4HHTJNsLKDbxT/spa4oGQ==" /></div>
       <button
         class="btn btn-sm btn-with-count js-toggler-target"
         aria-label="Unstar this repository" title="Unstar noyobo/noyobo.github.com"
@@ -320,7 +320,7 @@
           0
         </a>
 </form>
-    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/star" class="js-toggler-form unstarred js-star-button" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="zu/6B7vlyQT9Cwe37cOPbsDWnJ4jlycRPmNsTfGbKkVHDfLsIjf3hO83dX/3FuzT8UGZfvn2+z1A6bkq0l/mHw==" /></div>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/star" class="js-toggler-form unstarred js-star-button" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="9Q7bNbSPz+MdUXCuramZzgbzgknCoprGKTCqdnvTwQdhb2ZSiReHM4pJyE1EOkJvB5gKlBXHaj6krUJOCFBgLg==" /></div>
       <button
         class="btn btn-sm btn-with-count js-toggler-target"
         aria-label="Star this repository" title="Star noyobo/noyobo.github.com"
@@ -471,7 +471,7 @@
 
 
   <div class="clone-options">You can clone with
-    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4e43GyownAN1hRDjOyfU1MCoDps2ruNDoIX8ifF25OihkItbZJnLzInMlbjHEcdxb8FF+/fD1PDmCysmQVMIKw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form>, <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="D1ULAMvMINt1vi55zRXgami1zz25M4RWEKY+Izj4lLG3u01dLUSxQegWf9hiPDLa4rCrrYBpOrBY7oG3EYZAZA==" /></div><button class="btn-link js-clone-selector" data-protocol="ssh" type="submit">SSH</button></form>, or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SuSVyZW6CogD37ngEi0Ncr+5M2IDwUR16Hp7eK6AU1VbbSXBBW77NMGtMw3ZMNp6Aaf8V/UbMCE7KcILgCbypg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ls4vS673SoA41uI/n/eMf5u3wWmKAUndIajXK62mjtKsIbDBuqCoJ1IFrFbj3PCV1cqSdW0VEpvViKI2AVpDlw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form>, <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="E53sXBS9WMAt7xfsUv4/E1xW7Llr8xIQr0TqhpgaKKcW5DTNz7kAw/UarrW+mjZ67EloQP4IhrN/DoTuZJht1w==" /></div><button class="btn-link js-clone-selector" data-protocol="ssh" type="submit">SSH</button></form>, or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="A6lzxjI1Ny14A7BprKNO+vg4zgjomRIBBFWMA0FaiZvYHGoYtD5sZQNOLsnLD/bWy+VLi2FzGPbNymaoK5GJBw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
     <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
       <span class="octicon octicon-question"></span>
     </a>
@@ -495,9 +495,9 @@
 
           
 
-<a href="/noyobo/noyobo.github.com/blob/28efcad169a8619b9f53519ae8235cee5b837712/assets/js/highlight.pack.js" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+<a href="/noyobo/noyobo.github.com/blob/28efcad169a8619b9f53519ae8235cee5b837712/dist/js/highlight.pack.js" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-<!-- blob contrib key: blob_contributors:v21:d56a95b2fa5007f3734942d9f9a7e874 -->
+<!-- blob contrib key: blob_contributors:v21:a07263727a1da193b8b79cd2bf528850 -->
 
   <div class="file-navigation js-zeroclipboard-container">
     
@@ -540,7 +540,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/noyobo/noyobo.github.com/blob/master/assets/js/highlight.pack.js"
+               href="/noyobo/noyobo.github.com/blob/master/dist/js/highlight.pack.js"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -560,7 +560,7 @@
 
             <div class="select-menu-item js-navigation-item ">
               <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/noyobo/noyobo.github.com/tree/0.0.0/assets/js/highlight.pack.js"
+              <a href="/noyobo/noyobo.github.com/tree/0.0.0/dist/js/highlight.pack.js"
                  data-name="0.0.0"
                  data-skip-pjax="true"
                  rel="nofollow"
@@ -588,64 +588,43 @@
     </div>
 
     <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/noyobo/noyobo.github.com" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">noyobo.github.com</span></a></span></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/noyobo/noyobo.github.com/tree/master/assets" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">assets</span></a></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/noyobo/noyobo.github.com/tree/master/assets/js" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">js</span></a></span><span class="separator">/</span><strong class="final-path">highlight.pack.js</strong>
+      <span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/noyobo/noyobo.github.com" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">noyobo.github.com</span></a></span></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/noyobo/noyobo.github.com/tree/master/dist" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">dist</span></a></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/noyobo/noyobo.github.com/tree/master/dist/js" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">js</span></a></span><span class="separator">/</span><strong class="final-path">highlight.pack.js</strong>
     </div>
   </div>
 
-
-  <div class="commit file-history-tease">
-    <div class="file-history-tease-header">
-        <img alt="@noyobo" class="avatar" height="24" src="https://avatars2.githubusercontent.com/u/1292082?v=3&amp;s=48" width="24" />
-        <span class="author"><a href="/noyobo" rel="author">noyobo</a></span>
-        <time datetime="2014-10-19T07:46:13Z" is="relative-time">Oct 19, 2014</time>
-        <div class="commit-title">
-            <a href="/noyobo/noyobo.github.com/commit/7eb949c2b4cf25548944db9ef0dcf2365e10f951" class="message" data-pjax="true" title="重构样式">重构样式</a>
-        </div>
-    </div>
-
-    <div class="participation">
-      <p class="quickstat">
-        <a href="#blob_contributors_box" rel="facebox">
-          <strong>1</strong>
-           contributor
-        </a>
-      </p>
-      
-    </div>
-    <div id="blob_contributors_box" style="display:none">
-      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
-      <ul class="facebox-user-list" data-facebox-id="facebox-description">
-          <li class="facebox-user-list-item">
-            <img alt="@noyobo" height="24" src="https://avatars2.githubusercontent.com/u/1292082?v=3&amp;s=48" width="24" />
-            <a href="/noyobo">noyobo</a>
-          </li>
-      </ul>
-    </div>
+<include-fragment class="commit commit-loader file-history-tease" src="/noyobo/noyobo.github.com/contributors/master/dist/js/highlight.pack.js">
+  <div class="file-history-tease-header">
+    Fetching contributors&hellip;
   </div>
 
+  <div class="participation">
+    <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" /></p>
+    <p class="loader-error">Cannot retrieve contributors at this time</p>
+  </div>
+</include-fragment>
 <div class="file">
   <div class="file-header">
   <div class="file-actions">
 
     <div class="btn-group">
-      <a href="/noyobo/noyobo.github.com/raw/master/assets/js/highlight.pack.js" class="btn btn-sm " id="raw-url">Raw</a>
-        <a href="/noyobo/noyobo.github.com/blame/master/assets/js/highlight.pack.js" class="btn btn-sm js-update-url-with-hash">Blame</a>
-      <a href="/noyobo/noyobo.github.com/commits/master/assets/js/highlight.pack.js" class="btn btn-sm " rel="nofollow">History</a>
+      <a href="/noyobo/noyobo.github.com/raw/master/dist/js/highlight.pack.js" class="btn btn-sm " id="raw-url">Raw</a>
+        <a href="/noyobo/noyobo.github.com/blame/master/dist/js/highlight.pack.js" class="btn btn-sm js-update-url-with-hash">Blame</a>
+      <a href="/noyobo/noyobo.github.com/commits/master/dist/js/highlight.pack.js" class="btn btn-sm " rel="nofollow">History</a>
     </div>
 
       <a class="octicon-btn tooltipped tooltipped-nw"
-         href="github-mac://openRepo/https://github.com/noyobo/noyobo.github.com?branch=master&amp;filepath=assets%2Fjs%2Fhighlight.pack.js"
+         href="github-mac://openRepo/https://github.com/noyobo/noyobo.github.com?branch=master&amp;filepath=dist%2Fjs%2Fhighlight.pack.js"
          aria-label="Open this file in GitHub Desktop"
          data-ga-click="Repository, open with desktop, type:mac">
           <span class="octicon octicon-device-desktop"></span>
       </a>
 
-        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/edit/master/assets/js/highlight.pack.js" class="inline-form js-update-url-with-hash" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="J6L+XlJjjLCu0BpGLmnH8JGCvZ+4tiY0wGsAD1kSsgYE6ScDsFHhlGLSU3soKBdpDpyZwIioW9ow8EzebMhaCw==" /></div>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/edit/master/dist/js/highlight.pack.js" class="inline-form js-update-url-with-hash" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FK3WvP5eP2rTSHgqbVuYHk3Gd7F4i5YhwjOCXZypWjz6WTYtFoH2iyvwpSRRJrvCeyBPPACbHfGOMTrD5PaFhA==" /></div>
           <button class="octicon-btn tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
             <span class="octicon octicon-pencil"></span>
           </button>
-</form>        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/delete/master/assets/js/highlight.pack.js" class="inline-form" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="NqP97rlx+TbQtpmLRx0iEYSRiFyxHxXDXikgzzhBhCdLTJ4YtV/pZ/ov8Tv0Tfq4a2NSoS7VW6d3ml3cIrMXBA==" /></div>
+</form>        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/noyobo/noyobo.github.com/delete/master/dist/js/highlight.pack.js" class="inline-form" data-form-nonce="8b626ea5909742962f2facef504e3d7e08d969bf" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="cFarWZpppjnFOEsxsZcZuXFcyYw/d+jnDzY8aK7Thc354q14Z97lJOCyeMkp3hFmFtEukTJIS+mwWTRlkFHVyA==" /></div>
           <button class="octicon-btn octicon-btn-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <span class="octicon octicon-trashcan"></span>
@@ -706,7 +685,7 @@
       <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2015 <span title="0.09709s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2015 <span title="0.07978s from github-fe120-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
