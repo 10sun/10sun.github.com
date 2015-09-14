@@ -242,7 +242,7 @@ tags : [DeepLearning, DBN]
     
     <!-- -->
 
-    + Contrastive divergence update in this generalized RBM:
+    + Contrastive divergence update in this generalized *RBM*:
         $$ FreeEnergy(x) = -log\sum_h exp(-\sum_{i,j} \eta_{i,j}(h_i, x_j))$$
         The gradient of the free energy of a sample \\(x\\) is thus
         $$ 
