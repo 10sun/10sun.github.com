@@ -244,8 +244,8 @@ tags : [DeepLearning, DBN]
         The gradient of the free energy of a sample \\(x\\) is thus
         $$ 
         \begin{aligned}
-            \frac{\partial{FreeEnergy(x)}}{\partial{\theta}} &= \sum_h\frac{exp(-\sum_{i,j}\eta_{i,j}(h_i, x_j))}{\sum_h exp(-Í\sum_{i,j}\eta_{i,j}(\widetilde{h_i}, x_j))}\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}  
-            & = \sum_h P(h|x)\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}
+            \frac{\partial{FreeEnergy(x)}}{\partial{\theta}} &= \sum_h\frac{exp(-\sum_{i,j}\eta_{i,j}(h_i, x_j))}{\sum_h exp(-Í\sum_{i,j}\eta_{i,j}(\widetilde{h_i}, x_j))}\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}$$  
+        $$    & = \sum_h P(h|x)\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}
             & = E_h[\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}|x]
         \end{aligned}
         $$
