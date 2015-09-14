@@ -23,9 +23,9 @@ tags : [C++Primer, Basis]
         * boolean: true, or false
         * character: '' + character.
     
->| signed | unsigned | boolean | 
->|--------|---------:|--------:|
->|both postive and negative numbers | only valus greater than 0 | true or false |
+>| signed       | unsigned   | boolean | 
+>|--------------|-----------:|--------:|
+>|$\pm$ numbers | values > 0 | true or false |
 >| sign bit = 1, value < 0 | | |
 >| sign bit = 0, value >= 0| | |
 
