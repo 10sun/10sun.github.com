@@ -264,8 +264,7 @@ tags : [DeepLearning, DBN]
       2. sleep phase: sample \\((h,x)\\) from model \\(P(x,h)\\) and use that pair as fully observed data for training \\(Q(h\mid x)\\).
 - *Arguments*
     + The *log-likelihood of a DBN* can be *lower bounded* using *Jensen's inequality*, and can *justify the greedy layer-wise training strategy.*
-    $$
-    logP(x) & = (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)} $$
+    $$ logP(x) & = (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)} $$
     $$ = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\frac{Q(h|x)}{Q(h|x)} $$
     $$ = \sum_hQ(h|x)logP(x,h) - \sum_hQ(h|x)logQ(h|x) + \sum_hQ(h|x)log\frac{Q(h|x)}{P(h|x)} $$
     $$ = \sum_hQ(h|x)logP(x,h) + H_{Q(h|x)} + KL(Q(h|x)||P(h|x)) $$
