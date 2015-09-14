@@ -8,7 +8,7 @@ tags : [C++, Basis]
 
 This post summarizes the note of some basic C++ syntax, which make me confused.
 
-- *heap vs stack* ([link](http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap){:target="_blank"})
+- *heap vs stack* ([link](http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap))
     + The *stack* is the memory set aside as *scratch space for a thread of executation*. 
         * The stack is always reserved in a *LIFO (Last In First Out)* order. The most recently reserved block is always the next block to be freed.
         * When a function is called, a block is reserved on the top of the stack for local variables and some bookkeeping data.
