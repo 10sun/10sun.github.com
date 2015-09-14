@@ -30,7 +30,10 @@ tags : [MachineLearning, Basis]
         $$ J(\theta_0,\theta_1) = \frac{1}{2m} \sum_{i = 1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^2 $$
     + Gradient Descent: A way to automatically improve the hypothesis function. The way to do is taking the *derivative* of the cost function. The slope of the tangent is the derivative at that point and it will give us a direction to move towards. We make steps down that derivative by the parameter $\alpha$, called the *learning rate*. The gradient descent equation is:</br>
         **repeat until convergence:**
-        $\theta_j := \theta_j - \alpha \frac{\partial }{\partial \theta_{j}} J(\theta_0, \theta_1)$ for  $j = 0$ and $j = 1$.
+        > $\theta_j := \theta_j - \alpha \frac{\partial }{\partial \theta_{j}} J(\theta_0, \theta_1)$ for  $j = 0$ and $j = 1$.
+        
+        <!-- -->
+        
         Intuitively, this could be thought of as:
         **repeat until convergence:**
         $\theta_j := \theta_j - \alpha$ [Slope of tangent, aka derivative]
@@ -40,7 +43,7 @@ tags : [MachineLearning, Basis]
         \theta_1 := \theta_1 - \alpha \frac{1}{m}\sum_{i=1}^m((h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)})$$
         
         <!-- -->
-        
+
         where m is the size of the training set, $\theta_0$ as a constant that will be changing simultaneously with $\theta_1$ and 
         x^{(i)}$, $y^{(i)}$ are values of the given training set (data).
 
