@@ -263,9 +263,9 @@ tags : [DeepLearning, DBN]
       1. *wake phase updates for the weights of the top RBM.* sample \\(x\\) from the training set generate \\(h ~ Q(h\mid x)\\) and use this \\((h,x)\\) as fully observed data for training \\(P(x\mid h)\\) and \\(P(h)\\).
       2. sleep phase: sample \\((h,x)\\) from model \\(P(x,h)\\) and use that pair as fully observed data for training \\(Q(h\mid x)\\).
 - *Arguments*
-    + The *log-likelihood of a DBN* can be *lower bounded* using *Jensen's inequality*, and can *justify the greedy layer-wise training strategy.*
+    + The *log-likelihood of a DBN* can be *lower bounded* using *Jensen's inequality*, and can *justify the greedy layer-wise training strategy.* Test here. </br>
     $$\begin{eqnarray} 
-        logP(x) &= (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)} </br>
+    logP(x) &= (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)} </br>
                 & = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\frac{Q(h|x)}{Q(h|x)} </br>
                 & = \sum_hQ(h|x)logP(x,h) - \sum_hQ(h|x)logQ(h|x) + \sum_hQ(h|x)log\frac{Q(h|x)}{P(h|x)} </br>
                 & = \sum_hQ(h|x)logP(x,h) + H_{Q(h|x)} + KL(Q(h|x)||P(h|x)) </br>
