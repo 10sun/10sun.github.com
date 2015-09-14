@@ -28,7 +28,7 @@ tags : [MachineLearning, Basis]
     + Gradient Descent: A way to automatically improve the hypothesis function. The way to do is taking the *derivative* of the cost function. The slope of the tangent is the derivative at that point and it will give us a direction to move towards. We make steps down that derivative by the parameter $$\alpha$$, called the *learning rate*. The gradient descent equation is:\\
         **repeat until convergence:**\\
         $$ \theta_j := \theta_j - \alpha \frac{\partial }{\partial \theta_{j}} J(\theta_0, \theta_1)$$\\
-        for j = 0 and j = 1.
+        for $$j = 0$$ and $$j = 1$$.
 
         Intuitively, this could be thought of as: \\
         **repeat until convergence:**\\
