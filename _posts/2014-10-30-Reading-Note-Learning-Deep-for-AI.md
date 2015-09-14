@@ -265,15 +265,12 @@ tags : [DeepLearning, DBN]
 - *Arguments*
     + The *log-likelihood of a DBN* can be *lower bounded* using *Jensen's inequality*, and can *justify the greedy layer-wise training strategy.*
     $$
-    \begin{aligned}
-    logP(x) & = (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}
-    & = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\frac{Q(h|x)}{Q(h|x)} 
-    & = \sum_hQ(h|x)logP(x,h) - \sum_hQ(h|x)logQ(h|x) + \sum_hQ(h|x)log\frac{Q(h|x)}{P(h|x)} 
-    & = \sum_hQ(h|x)logP(x,h) + H_{Q(h|x)} + KL(Q(h|x)||P(h|x)) 
-    & = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)lop(P(h)P(x|h)) 
-    & = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)(logP(h) + logP(x|h))
-    \end{aligned}
-    $$
+    logP(x) & = (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)} $$
+    $$ = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\frac{Q(h|x)}{Q(h|x)} $$
+    $$ = \sum_hQ(h|x)logP(x,h) - \sum_hQ(h|x)logQ(h|x) + \sum_hQ(h|x)log\frac{Q(h|x)}{P(h|x)} $$
+    $$ = \sum_hQ(h|x)logP(x,h) + H_{Q(h|x)} + KL(Q(h|x)||P(h|x)) $$
+    $$ = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)lop(P(h)P(x|h)) $$
+    $$ = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)(logP(h) + logP(x|h))$$
     \\(H_{Q(h\mid x)}\\) is the entropy of distribution \\(Q(h\mid x)\\).\\
     Due to the *non-negativity of the KL divergence*:
     $$ logP(x) \geq H_{Q(h\mid x)} + \sum_hQ(h|x)(logP(h) + logP(x|h))$$, which becomes an equity when \\(P\\) and \\(Q\\) are identical.
