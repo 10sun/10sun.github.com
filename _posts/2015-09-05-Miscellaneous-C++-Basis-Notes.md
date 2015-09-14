@@ -40,13 +40,11 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
 
     + A smart pointer by comparison defines a policy as to when the object is destroyed. You still have to create the object, but you no longer have to worry about destroying it.
     
-    >{% highlight cpp %}
+    {% highlight cpp %}
       SmartPtr<MyObject> ptr(new MyObject());
     ptr->doSomething();         // use the object in some way
-
     // destruction of the object happens, depending on the policy the
     // smart pointer class uses.
-
     // destruction would happen even if doSomething() throws an exception
     {% endhighlight %} 
 
