@@ -31,8 +31,6 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
     + With a 'raw' C++ pointer, the programmer has to explicitly destroy the object when it is no longer useful.
     
     ``` c++
-    int main()
-    {return 0;}
     MyObject* ptr = new MyObject();
     ptr->doSomething();         // use the object in some way
     delete ptr;                 // destroy the object. done with it.
