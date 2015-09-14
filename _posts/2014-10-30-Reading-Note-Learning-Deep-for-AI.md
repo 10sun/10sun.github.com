@@ -145,8 +145,8 @@ tags : [DeepLearning, DBN]
     + Boltzmann Machine is defined by an energy function \\(P(x)=e^{-E(x)/Z)}\\). Due to the quadratic interaction in \\(h\\), *an Monte Carlo Markov Chain sampling procedure can be applied to obtain a stochastic estimator of the gradient (log-likelihood gradient).* 
     $$ 
     \begin{aligned}
-        \frac{\partial{logP(x)}}{\theta} &= \frac{\partial{log \sum_h e^{-Energy(x,h)}}}{\theta} - \frac{\partial{log\sum_{\widetilde{x},h}e^{-Energy(\widetilde{x},h)}}}{\theta} 
-        & = -\frac{1}{\sum_h e^{-Energy(x,h)}}\sum_h e^{-Energy(x,h)}\frac{\partial{Energy(x,h)}}{\partial{\theta}} + \frac{1}{\sum_{\widetilde{x},h}e^{-Energy(\widetilde{x},h}}\sum_{\widetilde{x},h}\frac{\partial{Energy(\widetilde{x},h)}}{\partial{theta}} 
+        \frac{\partial{logP(x)}}{\theta} &= \frac{\partial{log \sum_h e^{-Energy(x,h)}}}{\theta} - \frac{\partial{log\sum_{\widetilde{x},h}e^{-Energy(\widetilde{x},h)}}}{\theta} \\\\
+        & = -\frac{1}{\sum_h e^{-Energy(x,h)}}\sum_h e^{-Energy(x,h)}\frac{\partial{Energy(x,h)}}{\partial{\theta}} + \frac{1}{\sum_{\widetilde{x},h}e^{-Energy(\widetilde{x},h}}\sum_{\widetilde{x},h}\frac{\partial{Energy(\widetilde{x},h)}}{\partial{theta}} \\\\
         & = -\sum_h P(h|x)\frac{\partial{Energy(x,h)}}{\partial{\theta}} + \sum_{\widetilde{x},h}\frac{\partial{Energy(\widetilde{x},h)}}{\partial{\theta}} 
         \end{aligned}
     $$
@@ -263,7 +263,7 @@ tags : [DeepLearning, DBN]
       1. *wake phase updates for the weights of the top RBM.* sample \\(x\\) from the training set generate \\(h ~ Q(h\mid x)\\) and use this \\((h,x)\\) as fully observed data for training \\(P(x\mid h)\\) and \\(P(h)\\).
       2. sleep phase: sample \\((h,x)\\) from model \\(P(x,h)\\) and use that pair as fully observed data for training \\(Q(h\mid x)\\).
 - *Arguments*
-    + The *log-likelihood of a DBN* can be *lower bounded* using *Jensen's inequality*, and can *justify the greedy layer-wise training strategy.* Test here. </br>
+    + The *log-likelihood of a DBN* can be *lower bounded* using *Jensen's inequality*, and can *justify the greedy layer-wise training strategy.*</br>
     \begin{align} 
     logP(x) &= (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\\\\
             & = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\frac{Q(h|x)}{Q(h|x)}\\\\
