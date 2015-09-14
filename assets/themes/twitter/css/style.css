@@ -207,10 +207,17 @@ img.navDock:hover {
   border: 0;
 }
 
+.MathJax_Preview{
+	background: #ffffff;
+}
+
 .MathJax{
 	background: #ffffff;
 }
 
+.MathJax_Display{
+	background: #ffffff;
+}
 /* tag_box ======================================================== */
 
 .tag_box {
