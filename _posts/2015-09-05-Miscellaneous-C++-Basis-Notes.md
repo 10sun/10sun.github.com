@@ -30,7 +30,7 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
  
     + With a 'raw' C++ pointer, the programmer has to explicitly destroy the object when it is no longer useful.
     
-    >{% highlight cpp %}
+    {% highlight cpp %}
       MyObject* ptr = new MyObject();
     ptr->doSomething();         // use the object in some way
     delete ptr;                 // destroy the object. done with it.
@@ -40,7 +40,7 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
 
     + A smart pointer by comparison defines a policy as to when the object is destroyed. You still have to create the object, but you no longer have to worry about destroying it.
     
-    >{% highlight cpp %}
+    {% highlight cpp %}
       SmartPtr<MyObject> ptr(new MyObject());
     ptr->doSomething();         // use the object in some way
 
