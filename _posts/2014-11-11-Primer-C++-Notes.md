@@ -23,11 +23,11 @@ tags : [C++Primer, Basis]
         * boolean: true, or false
         * character: '' + character.
     
->| signed | unsigned | boolean | 
->|--------|:---------:|--------:|
->|both postive and negative numbers | only valus greater than 0 | true or false |
->| sign bit = 1, value < 0 | | |
->| sign bit = 0, value >= 0| | |
+| signed | unsigned | boolean | 
+|--------|:---------:|--------:|
+|both postive and negative numbers | only valus greater than 0 | true or false |
+| sign bit = 1, value < 0 | | |
+| sign bit = 0, value >= 0| | |
 
 <!--more-->
 
@@ -54,7 +54,7 @@ tags : [C++Primer, Basis]
     + when mixing strings and string literals, at least one operand to each '+' operator must be of *string* type
     
     ``` c++
-      string.empty()          // returns true if string is empty; otherwise false.
+    string.empty()          // returns true if string is empty; otherwise false.
     string.size()           // returns number of characters in the string
     string[n]               // access the n+1 th element in the string. string index starts from 0 to string.size()-1
     s1 + s2                 // concatenats s1 and s2
