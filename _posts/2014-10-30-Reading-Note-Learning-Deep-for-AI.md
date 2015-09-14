@@ -265,11 +265,11 @@ tags : [DeepLearning, DBN]
 - *Arguments*
     + The *log-likelihood of a DBN* can be *lower bounded* using *Jensen's inequality*, and can *justify the greedy layer-wise training strategy.* Test here. </br>
     \begin{align} 
-    logP(x) &= (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\\
-            & = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\frac{Q(h|x)}{Q(h|x)}\\
-            & = \sum_hQ(h|x)logP(x,h) - \sum_hQ(h|x)logQ(h|x) + \sum_hQ(h|x)log\frac{Q(h|x)}{P(h|x)} \\
-            & = \sum_hQ(h|x)logP(x,h) + H_{Q(h|x)} + KL(Q(h|x)||P(h|x))\\
-            & = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)lop(P(h)P(x|h))\\
+    logP(x) &= (\sum_h Q(h|x))logP(x) = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\\\\
+            & = \sum_hQ(h|x)log\frac{P(x,h)}{P(h|x)}\frac{Q(h|x)}{Q(h|x)}\\\\
+            & = \sum_hQ(h|x)logP(x,h) - \sum_hQ(h|x)logQ(h|x) + \sum_hQ(h|x)log\frac{Q(h|x)}{P(h|x)} \\\\
+            & = \sum_hQ(h|x)logP(x,h) + H_{Q(h|x)} + KL(Q(h|x)||P(h|x))\\\\
+            & = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)lop(P(h)P(x|h))\\\\
             & = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)(logP(h) + logP(x|h))
     \end{align}
     \\(H_{Q(h\mid x)}\\) is the entropy of distribution \\(Q(h\mid x)\\).</br>
@@ -316,3 +316,5 @@ tags : [DeepLearning, DBN]
     + <cite>[<a href="http://www.machinelearning.org/archive/icml2008/papers/638.pdf" target="_blank">187</a>, <a href="http://dl.acm.org/citation.cfm?id=1553506" target="_blank">188</a>] improve upon Contrastive Divergence taking computation time into account.</cite>
     + <cite>[<a href="http://www.cs.utoronto.ca/~rsalakhu/papers/eval_latents.pdf" target="_blank">133</a>, <a href="http://www.cs.toronto.edu/~rsalakhu/papers/dbn_ais.pdf" target="_blank">163</a>] instead of using reconstruction error to monitor the learning progress of RBMs and DBNs, use other  tractable approximations of the partition functions. (Annealed Importance Sampling)</cite>
     + <cite>[<a href="http://www.cnbc.cmu.edu/~tai/papers/lee_mumford_josa.pdf" target="_blank">112</a>] cortex working principle</cite>
+
+ [^1]: 
