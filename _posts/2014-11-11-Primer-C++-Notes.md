@@ -27,7 +27,7 @@ tags : [C++Primer, Basis]
 >|--------------|---------------:|----------------:|
 >|$\pm$ numbers | values > 0     | true or false   |
 >| sign bit = 1, value < 0 | |      |
->| sign bit = 0, value $\gt$0| | |
+>| sign bit = 0, value $\geq$0| | |
 
 <!--more-->
 
