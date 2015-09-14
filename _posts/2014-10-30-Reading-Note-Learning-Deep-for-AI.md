@@ -237,17 +237,15 @@ tags : [DeepLearning, DBN]
     + Generalisation of RBM: *a generalized RBM is an energy-based probabilistic model with input vector \\(x\\) and hidden vector \\(h\\) whose energy function is such that \\(P(h\mid x)\\) and \\(P(x\mid h)\\) both factorise.* Complementary priors allow the posterior distribution \\(P(h\mid x)\\) to factorize by a proper choice of \\(P(h)\\).
 
     
-    > Proposition 7.1 The energy function associtated with a model of the form of Equation (5.5) such that \\(P(h\mid x) = \prod_i P(h_i\mid x)\\) and \\(P(x\mid h)=\prod_j P(x_j\mid h)\\) must have the form \\(Energy(x,h) = \sum_j \phi_j(x_j) + \sum_i \xi_i(h_i) + \sum_{i,j} \eta_{i,j}(h_i, x_j) (7.7)\\)\\
+    > Proposition 7.1 The energy function associtated with a model of the form of Equation (5.5) such that \\(P(h\mid x) = \prod_i P(h_i\mid x)\\) and \\(P(x\mid h)=\prod_j P(x_j\mid h)\\) must have the form \\(Energy(x,h) = \sum_j \phi_j(x_j) + \sum_i \xi_i(h_i) + \sum_{i,j} \eta_{i,j}(h_i, x_j) (7.7)\\).
 
     + Contrastive divergence update in this generalized RBM:
         $$ FreeEnergy(x) = -log\sum_h exp(-\sum_{i,j} \eta_{i,j}(h_i, x_j))$$
         The gradient of the free energy of a sample \\(x\\) is thus
         $$ 
-        \begin{aligned}
-            \frac{\partial{FreeEnergy(x)}}{\partial{\theta}} &= \sum_h\frac{exp(-\sum_{i,j}\eta_{i,j}(h_i, x_j))}{\sum_h exp(-Í\sum_{i,j}\eta_{i,j}(\widetilde{h_i}, x_j))}\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}$$  
-        $$    & = \sum_h P(h|x)\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}
-            & = E_h[\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}|x]
-        \end{aligned}
+            \frac{\partial{FreeEnergy(x)}}{\partial{\theta}} = \sum_h\frac{exp(-\sum_{i,j}\eta_{i,j}(h_i, x_j))}{\sum_h exp(-Í\sum_{i,j}\eta_{i,j}(\widetilde{h_i}, x_j))}\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}$$  
+        $$    = \sum_h P(h|x)\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}$$
+        $$    & = E_h[\sum_{i,j}\frac{\partial{\eta_{i,j}(h_i, x_j)}}{\partial{\theta}}|x]
         $$
 - *Bibliography*
     + <cite>[<a href="http://www.cs.toronto.edu/~ranzato/publications/ranzato-nips07.pdf" target="_blank">150</a>] justify the sparsity of the representation in the context of models based on auto-encoders. how one might get good models even though the partition function is not explicitly minimized, or only minimized approximately as long as other constraints are used on the learned representation.</cite>
