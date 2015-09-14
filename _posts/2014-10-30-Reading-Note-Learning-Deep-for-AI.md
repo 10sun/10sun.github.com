@@ -222,7 +222,7 @@ tags : [DeepLearning, DBN]
     + why the sparse representation?
         1. if one is to have fixed-size representations, *sparse representations are more efficient than non-sparse ones in an information-theoretic sense*, allowing for varying the effective number of bits per example.
         2. the fixed-length representation is going to be used as input for further processing so that it should be easy to interpret. A highly compressed encoding is usually highly entangled so that no subset of bits in the code can really be interpreted unless all the other bits are taken into account. But *sparse representation allows a subset or an individual bit can interpret some features of the data*, which might be sufficient for some particular prediction tasks.
-    + In compressed sensing, sparsity is achieved with the $l_1$ penalty on the codes. Given bases in matrix $W$, we look for codes $h$ such that the input signal $x$ is reconstructed with low $l_2$ reconstruction error while $h$ is sparse: $ \min_h \left \| x- Wh \right \|_2^2 + \lambda \left \|h \right \|_1 $, where $\left \|h \right \|_1 = \sum_i \left \|h_i \right \|$
+    + In compressed sensing, sparsity is achieved with the $l_1$ penalty on the codes. Given bases in matrix $W$, we look for codes $h$ such that the input signal $x$ is reconstructed with low $l_2$ reconstruction error while $h$ is sparse: \min_h \left \| x- Wh \right \|_2^2 + \lambda \left \|h \right \|_1, where $\left \|h \right \|_{1} = \sum_i \left \|h_i \right \|$
     + *sparse coding performs a kind of explaining away*: it chooses one configuration among many of the hidden codes that could explain the input.
         1. advantage: if a cause is much more probable than the other, then it is the one that we want to highlight.
         2. disadvantage: 
@@ -258,7 +258,7 @@ tags : [DeepLearning, DBN]
     + <cite>[<a href="http://www.iro.umontreal.ca/~vincentp/Publications/denoising_autoencoders_tr1316.pdf" target="_blank">195</a>]shows how the strategy is highly successful as unsupervised pre-training for a deep architecture, and links the denoising auto-encoder to a generative model.</cite>
     + <cite>[<a href="http://www.cs.toronto.edu/~osindero/PUBLICATIONS/OsinderoHinton_ModelingImagePatchesWithDHMRFs_NIPS07_final.pdf" target="_blank">141</a>] model based on lateral connected RBMs, proves that DBN based on this model generates more realistic image patches than DBN based on ordinary RBMs.</cite>
     + <cite>[<a href="http://redwood.berkeley.edu/bruno/papers/VR.pdf" target="_blank">139</a>] whitening is useful for image processing systems.</cite>
-    + <cite>[<a href="https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf" target="_blank">73</a>] energy function associated with a model of the the form of Equation 5.5 such that P(h\mid x) and P(x\mid h) must have the form.</cite>
+    + <cite>[<a href="https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf" target="_blank">73</a>] energy function associated with a model of the the form of Equation 5.5 such that $P(h\mid x)$ and $P(x\mid h)$ must have the form.</cite>
     
 **Ch8. Stochastic Variational Bounds for Joint Optimization of DBN Layers**
 
