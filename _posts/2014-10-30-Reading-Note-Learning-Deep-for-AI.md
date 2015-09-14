@@ -119,11 +119,11 @@ tags : [DeepLearning, DBN]
 
 - *Concepts*
     + *Energy based model*: The model associates *a scalar energy to each configuration of the variables of interst*. 
-    $$P(x) = \frac{e^{-Energy(x)}}{Z}$$,
+    $$P(x) = \frac{e^{-Energy(x)}}{Z} ,$$
     where \\(Z = \sum_x e^{-Energy(x)}\\) is the partition function as a sum running over the input space.
     + *Boltzmann machine*: Energy function of a BM is
     $$Energy(x,h) =  -b^{'}x - c^{'}h - h^{'}Wx - x^{'}Ux - h^{'}Vh$$.
-    These parameters (offsets and weights) are collectively denoted by $$\theta$$.
+    These parameters (offsets and weights) are collectively denoted by \\(\theta\\).
     + *Restricted Boltzmann Machine (RBM)*: Building block of the DBN. It shares parametrization with individual layers of a DBN.
         * *Hidden units are **independent** of each other*, when *conditioning on visible units \\(x\\)*. Likewise for visible units.
         * Energy function:
@@ -153,7 +153,7 @@ tags : [DeepLearning, DBN]
         * Derivatives are easy to compute. Hence *the only difficulty* here is to *propose a sampling procedure to sample from \\(P(h\mid x)\\) and one to sample from \\(P(x,h)\\), to approximate the log-likelihood gradient of Boltzmann machine*.
         * MCMC sampling approach is based on *Gibbs Sampling*. *Sampled sample of \\(x's\\) distribution converges to \\(P(x)\\) as the number of sampling step goes to infinity under some conditions.*
     + In a boltzmann machine, for binary sample units, \\(P(S_i\mid S_{-i})\\) can be expressed as a usual equation for a neuron's output in terms of other neurons \\(S_{-i}\\). (\\(sigm(d_i + 2a_{-i}^{'}s_{-i})\\))
-    + *Two MCMC chains* are needed for each sample $$x$$. *The positive phase*, in which *\\(x\\) is clamped and \\((h\mid x)\\) is sampled*; *the negative phase* in which *\\((x,h)\\) is sampled*. *The computation of the gradient can be very expensive and the training time will be very long*. These are why Boltzmann machine was replaced by back-propagation for multi-layer neural network in 1980s.
+    + *Two MCMC chains* are needed for each sample \\(x\\). *The positive phase*, in which *\\(x\\) is clamped and \\((h\mid x)\\) is sampled*; *the negative phase* in which *\\((x,h)\\) is sampled*. *The computation of the gradient can be very expensive and the training time will be very long*. These are why Boltzmann machine was replaced by back-propagation for multi-layer neural network in 1980s.
     + For *continous-valued inputs*, *Gaussian input units* are better than binomial units (binary units).
     + Adding a hidden unit can always improve the log-likelihood.
     + RBM can also seen as a multi-clustering. Each hidden unit creates a two-region partition of the input space. \\(n\\) hidden units make \\(2^n\\) components mapped from the input space. This doesn't mean that every possible configuration of hidden unit will have an associated region in the input sapce.
@@ -229,15 +229,17 @@ tags : [DeepLearning, DBN]
             1. it makes *the resulting codes somewhat unstable*. small perturbations of the input x could give rise to very different values of the optimal code h.
             2. optimizing equation 7.1 is efficient, it can be hundreds of time slower than the kind of computation involved in computing the codes in ordinary auto-encoders or RBMs, making both training and recognition very slow.
             3. *joint optimization of the bases \\(W\\) with higher levels of a deep architecture is another stability issue*.
-    + sparse auto-encoders and sparse RBMs do not suffer from any of these sparse coding issues. This is because *sparse coding systems only parametrize the decoder*, while *the encoder is defined implicitly as the solution of an optimization*. *Instead, an ordinary auto-encoder or an RBM has **an encoder part \\((P(h\mid x))\\)** and **a decoder part \\((P(x\mid h))\\).***
+    + sparse auto-encoders and sparse RBMs do not suffer from any of these sparse coding issues. This is because *sparse coding systems only parametrize the decoder*, while *the encoder is defined implicitly as the solution of an optimization*. Instead, an ordinary auto-encoder or an RBM has **an encoder part \\((P(h\mid x))\\)** and **a decoder part \\((P(x\mid h))\\).**
     + middle ground between ordinary auto-encoders and sparse coding. Let the codes \\(h\\) be free but include a parametric encoder and a penalty for the difference between the free non-parametric codes \\(h\\) and the outputs of the parametric encoder.
     + Lateral connections capture pairwise dependencies that can be more easily captured this way than using hidden units, saving the hidden units for capturing higher-oder dependencies.
         1. advantage: the higher level factors represented by the hidden units do not have to encode all the local "details" that the lateral connections at the levels below can capture.
     + Contrastive Divergence for RBMs can be easily generalized to the case of conditional RBMs.
     + Generalisation of RBM: *a generalized RBM is an energy-based probabilistic model with input vector \\(x\\) and hidden vector \\(h\\) whose energy function is such that \\(P(h\mid x)\\) and \\(P(x\mid h)\\) both factorise.* Complementary priors allow the posterior distribution \\(P(h\mid x)\\) to factorize by a proper choice of \\(P(h)\\).
 
-    >Proposition 7.1 The energy function associtated with a model of the form of Equation (5.5) such that \\(P(h\mid x) = \prod_i P(h_i\mid x)\\) and \\(P(x\mid h)=\prod_j P(x_j\mid h)\\) must have the form \\(Energy(x,h) = \sum_j \phi_j(x_j) + \sum_i \xi_i(h_i) + \sum_{i,j} \eta_{i,j}(h_i, x_j) (7.7)\\)\\
-    
+    ``` Tex
+    Proposition 7.1 The energy function associtated with a model of the form of Equation (5.5) such that \\(P(h\mid x) = \prod_i P(h_i\mid x)\\) and \\(P(x\mid h)=\prod_j P(x_j\mid h)\\) must have the form \\(Energy(x,h) = \sum_j \phi_j(x_j) + \sum_i \xi_i(h_i) + \sum_{i,j} \eta_{i,j}(h_i, x_j) (7.7)\\)
+    ```
+
     + Contrastive divergence update in this generalized RBM:
         $$ FreeEnergy(x) = -log\sum_h exp(-\sum_{i,j} \eta_{i,j}(h_i, x_j))$$
         The gradient of the free energy of a sample \\(x\\) is thus
