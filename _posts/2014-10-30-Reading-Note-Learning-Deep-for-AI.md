@@ -274,9 +274,9 @@ tags : [DeepLearning, DBN]
     & = KL(Q(h|x)||P(h|x)) + H_{Q(h|x)} + \sum_hQ(h|x)(logP(h) + logP(x|h))
     \end{eqnarray}
     $$
-    \\(H_{Q(h\mid x)}\\) is the entropy of distribution \\(Q(h\mid x)\\).\\
+    \\(H_{Q(h\mid x)}\\) is the entropy of distribution \\(Q(h\mid x)\\).</br>
     Due to the *non-negativity of the KL divergence*:
-    $$ logP(x) \geq H_{Q(h\mid x)} + \sum_hQ(h|x)(logP(h) + logP(x|h))$$, which becomes an equity when \\(P\\) and \\(Q\\) are identical.
+    $$ logP(x) \geq H_{Q(h\mid x)} + \sum_hQ(h|x)(logP(h) + logP(x|h)) ,$$ which becomes an equity when \\(P\\) and \\(Q\\) are identical.
     + There exists a DBN whose \\(h^1\\) marginal equals the first RBM's \\(h^1\\) marginal, as long as the dimension of \\(h^2\\) equals the dimension of \\(h^0 = x\\). By symmetry of the roles of visible and hidden units in an RBM joint distribution, the marginal distribution over the visible vector of the second RBM is equal to the marginal distribution of the hidden vector of the first RBM.
     + *Further training of an additional RBM increases a lower bound on the log-likelihood inequality.*
     + As the lower bound continues to increase, the actual log-likelihood could start decreasing. 
