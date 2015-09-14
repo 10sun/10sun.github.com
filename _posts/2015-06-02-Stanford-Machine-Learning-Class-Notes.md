@@ -48,7 +48,6 @@ tags : [MachineLearning, Basis]
 
 - Notes:
     + Logistic regression cost function:
-        $$Cost(h_{\theta}(x), y) = \begin{cases}
- & -log(h_{\theta}(x)), y = 1
- & -log(1 - h_{\theta}(x)), y = 0 
-\end{cases}$$
+    $$Cost(h_{\theta}(x), y) =\begin{cases} -log(h_{\theta}(x))& y = 1\\\\
+    -log(1 - h_{\theta}(x))& y = 0 
+    \end{cases}$$
