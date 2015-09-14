@@ -5,24 +5,44 @@ permalink: /:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 #pygments: true
-#markdown: rdiscount
-highlighter: pygments
-markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
-kramdown:
-  input:         GFM
-  auto_ids:      true
-  auto_id_prefix:'id-'
 
-#kramdown:
-#  input: GFM
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-#    - hard_wrap
-#    - no_intra_emphasis
-#    - autolink
-#    - strikethrough
-#    - fenced_code_blocks
-#    - tables
+highlighter: pygments
+markdown: redcarpet  # [ maruku | rdiscount | kramdown | redcarpet ]
+markdown_ext:  markdown,mkd,mkdn,md
+textile_ext:   textile
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - strikethrough
+    - no_intra_emphasis
+    - autolink
+    - tables
+    - with_toc_data
+# kramdown:
+#   input:            GFM
+#   auto_id_prefix:   ''
+#   auto_ids:         true
+#   extensions:
+#     - autolink
+#     - footnotes
+#     - smart
+  # transliterated_header_ids: false
+  # footnote_nr:   1
+  # entity_output: as_char
+  # toc_levels:    1..6
+  # smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  # use_coderay:   true
+
+  # coderay:
+  #   coderay_wrap:              div
+  #   coderay_line_numbers:      inline
+  #   coderay_line_number_start: 1
+  #   coderay_tab_width:         2
+  #   coderay_bold_every:        10
+  #   coderay_css:               style
+
+
 paginate: 1
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
