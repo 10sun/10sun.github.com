@@ -18,11 +18,13 @@ tags : [MachineLearning, Basis]
 - *Definition*:
     + *Univariable linear regression*: linear regression with one variable is also known as "univariable linear regression". It is used to predict a signle output value from a single input value.
     + *Cost function*: it measures the accuracy of our hypothesis function. 
+
+<!--more-->
+
 - *Notes*:
     + Hypothesis function:
         $$ h_{\theta}(x) = \theta_0 + \theta_1 x$$
         By giving input '\\(x\\)' to \\(h_{\theta}(x)\\), we can get an output 'y' as the predict value.
-<!--more-->
 
     + Cost function: It takes an average of all the results of hypothesis with inputs from x's compared to the actual output y's. 
         $$ J(\theta_0,\theta_1) = \frac{1}{2m} \sum_{i = 1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^2 $$
