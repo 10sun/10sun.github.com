@@ -207,24 +207,6 @@ img.navDock:hover {
   border: 0;
 }
 
-.MathJax_Preview{
-	background: #ffffff;
-	font-style: italic;
-	font-weight: bold;
-}
-
-.MathJax{
-/*	background: #ffffff;*/
-	font-style: italic;
-	font-weight: bold;
-}
-
-.MathJax_Display{
-/*	background: #ffffff;*/
-	font-style: italic;
-	font-weight: bold;
-}
-
 /* tag_box ======================================================== */
 
 .tag_box {
