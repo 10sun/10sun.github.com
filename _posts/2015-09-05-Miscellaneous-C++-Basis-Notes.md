@@ -71,6 +71,8 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
     
     + A more complex smart pointer policy involves reference counting the pointer. This allows the pointer to be copied. When the last "reference" to the object is destroyed, the object is deleted. It can be implemented by *boost::scoped_ptr* and *std::share_ptr*.
 
+<!-- -->
+
     ```cpp
     void f()
     {
