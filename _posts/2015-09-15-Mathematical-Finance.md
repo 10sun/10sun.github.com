@@ -30,6 +30,8 @@ This course will cover the following contents:
 
 *Brief Review of Discrete Time Models*:
 
-$(\Omega, F) = (F_t)_{t = 0,1,2,...,T}, \mathbb{P}$， $(\Omega, F)$ is the probability space, where $(F_t)_{t=0,1,2,...,T}$ is the filtration. $\mathbb{P}$ is the probability measure on $(\Omega, F)$.
+<!-- -->
+
+$$(\Omega, F) = (F_t)\_{t = 0,1,2,...,T}, \mathbb{P}$$， $(\Omega, F)$ is the probability space, where $(F_t)_{t=0,1,2,...,T}$ is the filtration. $\mathbb{P}$ is the probability measure on $(\Omega, F)$.
 
 Typically, $F_0 = {\Phi,\Omega}$ trivial => $E(\xi\mid F_0) = E(\xi)$, or $F_0 = all null sets of \mathbb{P}$.
