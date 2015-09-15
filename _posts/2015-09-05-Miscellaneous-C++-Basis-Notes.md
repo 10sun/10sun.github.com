@@ -86,6 +86,8 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
     // the object is destroyed.
     ```
 
+<!-- -->
+
     + One drawback to reference counted pointers - the possibility of creating a dangling reference.
     + Since C++11 the standard librar has provided sufficient smart pointer types, and you should favour the use of *std::unique_ptr*, *std::shared_ptr* and *std::weak_ptr*.
 
