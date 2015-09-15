@@ -58,20 +58,19 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
         {
             boost::scoped_ptr<MyObject> ptr(new MyObject());
             ptr->doSomething();
-        }// boost::scoped_ptr goes out of scope, and the MyObject is automatically destroyed
-        // ptr->Ooops(); compiler error: "ptr" not defined since it is no longer in scope
+        }
+        // boost::scoped_ptr goes out of scope, and the MyObject is 
+        // automatically destroyed
+        // ptr->Ooops(); compiler error: "ptr" not defined since it is no 
+        // longer in scope
     }
     ```
-
-<!-- -->
 
     + The *boost::scoped_ptr* pointers cannot be copied. This prevents the pointer from being deleted multiple times. You can pass the references to it around to other functions.
     
     + Scoped pointers are useful when you want to tie the lifetime of the object to a particular block of code. 
     
     + A more complex smart pointer policy involves reference counting the pointer. This allows the pointer to be copied. When the last "reference" to the object is destroyed, the object is deleted. It can be implemented by *boost::scoped_ptr* and *std::share_ptr*.
-
-<!-- -->
 
     ```cpp
     void f()
@@ -87,8 +86,6 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
     }// p1 is destroyed, leaving a reference count of zero.
     // the object is destroyed.
     ```
-
-<!-- -->
 
     + One drawback to reference counted pointers - the possibility of creating a dangling reference.
     + Since C++11 the standard librar has provided sufficient smart pointer types, and you should favour the use of *std::unique_ptr*, *std::shared_ptr* and *std::weak_ptr*.
