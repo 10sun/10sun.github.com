@@ -50,6 +50,20 @@ This post summarizes the note of some basic C++ syntax, which make me confused.
 
     + The simplest policy in use involves the scope of the smart pointer wrapper object, such as implemented by *boost::scoped_ptr* or *std::unique_ptr*.
 
+    ``` cpp
+    void f()
+    {
+        {
+            boost::scoped_ptr<MyObject> ptr(new MyObject());
+            ptr->doSomething();
+        }
+        // boost::scoped_ptr goes out of scope --
+        // the MyObject is automatically destroyed
+        // ptr->Ooops(); compiler error: "ptr" not defined since it is no longer in scope
+    }
+    ```
+
+<!-- -->
 
 - *lock. mutex*
 - *thread*
