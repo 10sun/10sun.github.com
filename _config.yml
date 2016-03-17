@@ -6,8 +6,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 #pygments: true
 
-highlighter: pygments
-markdown: redcarpet  # [ maruku | rdiscount | kramdown | redcarpet ]
+highlighter: rouge
+markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 redcarpet:
