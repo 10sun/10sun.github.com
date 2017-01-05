@@ -1,0 +1,68 @@
+---
+layout : post
+category : Notes
+tags : [Torch, LearningNote]
+---
+
+{% include JB/setup %}
+
+Title: Torch Presentation Session
+
+- **Torch Intro**
+    + Similar to Matlab/Python + Numpy.
+    + JIT compilation via LuaJIT <http://luajit.org/>
+    + Fearlessly write for-loops
+    + Easy integration into and from C
+    + GPU support
+    + Several torch packages:
+        * neuraltalk2
+        * neural-style
+    + Applications: several mobile comanies are actually training the models offline with torch, and process it on device. (*possiblly a new product for Tileye*)
+    + *neural network* package, it's possible to build blocks of differentiable modules of neural networks
+    + *nngraph* package: designed for really complicated neural networks
+    + *autograd* by *twitter*: imperative programs. backprop defiend for every operation in the language.
+    + *distlearn*<https://github.com/twitter/torch-distlearn> by *twitter*: in-built multi-GPU (data and model parallel).
+- Core philosopy of torch
+    + Interactive computing
+        * no compilation time
+    + imperative programming
+    + minimal abstraction
+    + maximal flexibility
+- Key drivers of Growth
+    + tutorials and support: pre-trained models, high-quality open-source projects.
+    + deeply integrated GPU goodness
+    + zero compile time
+    
+- **Technical Part**
+    + Tensors and storages
+        * Tensor: n-dimensional array, row-major in memory
+            - select operation doesn't involve copy-past operation, but only select the memory part specified by the indice.
+            - tensor declaration is like a matrix: you need to specify the dimension of the tensor.
+        * GPU support for all operations. BUT need the *cutorch* package.
+    + Training neural networks
+        * Training pipeline
+            - HDD/SSD/NFS -> Data loader -> Queue -> Trainer (*neural network, cost function (nn package)*, *optimizer (optim package)*).
+        * **nn** package: building blocks of differentiable modules.
+            - while training neural nets, autoencoders, linear regression, cnn, and any of these models, we are interested in the gradients and loss functions.
+            - *nn* packages provide a large set of transfer functions: 
+                + *upgradeOutput()*: compute the output given the input.
+                + *upgradeGradInput()*: compute the derivative of the loss with respect to the input.
+                + *accGradParameters()*
+            - you can compose networks in different ways: sequential, concat, and parallel.
+            - CUDA backend with *cunn* package. Easy and natural to use, only maybe a change of a one-line code.
+        * *nngraph* package: composing neural networks in a different way: chain models one after another.
+        * *optim* package: a purely functional view of the world.
+            - covering various optimization methods, including SGD, averaged SGD, etc.
+        * *threads* package: data-loading threads on demand.
+        * *autograd* package.
+            - dynamic graphs.
+            - auto-differentiated nn modules
+            - tape based autograd
+        * *torchnet*: a common patterns for Torch by Facebook. 
+
+
+
+
+
+
+

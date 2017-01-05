@@ -1,0 +1,13 @@
+---
+layout : post
+category : Notes
+tags : [Torch, LearningNote]
+---
+
+{% include JB/setup %}
+
+- By learning high level abstract representation, we may discover knowledge of the data.
+- Capturing the shape of the distribution:
+    + the ancestor of current generative models: energy based models, RBM, undirected graphical models.
+    + Observed (+) examples push the energy down,
+    + generated /dream / fantasy(-) samples push the energy up.

@@ -1,0 +1,54 @@
+---
+layout : post
+category : Notes
+tags : [Torch, LearningNote]
+---
+
+{% include JB/setup %}
+
+Title: TensorFlow Presentation Session
+
+- **TensorFlow** intro
+    + Ease of expression
+        * Core in C++ (high-level ML computations)
+        * Interfaces:
+            - create your own models from scratch.
+            - DNNs, CNNs, RNNs, sequence to sequence.
+            - based on computational graphs.
+    + Scalability
+        * Use GPUs, Multiple cores.
+        * Model Paraalelism
+        * Data parallelism
+        * Synchronous updates
+    + Portability
+    + Reproducibility
+    + Production Reapladiness
+        * Easily train models in Python and develop it in C++
+        * Reuse the researchers' model
+    + TensorBoard: visualizing learning (useful)
+- *Neural Networks in TensorFlow*
+    + trained models.
+    + build on top of Tensorflow with higer level APIs (*TF Learn* API)
+    + define and train your own network
+        * activation functions:
+            - relu & variants
+            - sigmoid
+            - tanh
+        * cost functions
+        * normalization
+        * IDEAL for researchers
+    + State-of-the-art models in Tensorflow
+        * sequence to sequence models (machine translation)
+        * GoogLeNet2015 (inception architecture)
+        * autoencoders
+        * spatial transformer networks
+        * syntaxnet
+        * researchers publish their paper with the codes and trained models.
+- Cloud based APIs for various tasks
+    + Google cloud translation API
+    + Google cloud text API
+    + Google cloud vision API
+    + cloud machine learning <cloud.google.com/ml>
+
+
+

@@ -1,0 +1,11 @@
+---
+layout : post
+category : Notes
+tags : [Writing, LearningNote]
+---
+
+{% include JB/setup %}
+
+Title: Reading notes for "Stlye: Lessons in Clarity and Styles"
+
+
