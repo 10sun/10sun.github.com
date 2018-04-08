@@ -1,6 +1,6 @@
 ---
 layout : post
-category : Notes
+category : DeepLearningNotes
 tags : [MachineLearning, DeepLearning, Notes]
 ---
 
