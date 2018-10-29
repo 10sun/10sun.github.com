@@ -3,7 +3,7 @@
 </div>
 <div class="row">
   <div class="span7">  
-  	<p class="data">{{ page.date | date_to_string }}|
+  	<p class="data">{{ page.date | date_to_long_string }}|
   		Category:
 {% for category in page.categories %}
 <a href="/categories">{{ category }}</a>{% unless forloop.last %},{% endunless %}
